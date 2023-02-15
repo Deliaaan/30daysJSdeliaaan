@@ -7,29 +7,15 @@
     box-sizing: border-box;
 }
 
-html {
-    font-family: 'Poppins', sans-serif;
-}
-
-body {
-    width: 100%;
-    height: 100vh;
-    background: #dedede;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 header{
+    font-family: 'Poppins', sans-serif;
     position: relative;
-    width: 90%;
-    height: 90%;
     background: #fff;
-    box-shadow: 0px 0px 50px -1px rgb(0, 0, 0, .5);
     padding: 30px 30px;
     display: flex;
     flex-wrap: wrap;
     overflow: hidden;
+    transition: 1s linear;
 }
 
 header .logo{
@@ -198,9 +184,9 @@ header section.content .price_order .price a{
 header section .cards {
     width: 90%;
     height: 140px;
+    margin-top: 30px;
     position: relative;
-    border: 1px solid #000;
-    top: 15%;
+    /*border: 1px solid #000;*/
     padding-left: 30px;
     display: flex;
     align-items: center;
@@ -218,7 +204,6 @@ header section .cards .card{
     position: relative;
     min-width: 125px;
     min-height: 125px;
-    border: 1px solid #000;
     margin-right: 13px;
     background: #282828;
     border-radius: 50px 10px 10px 10px;
@@ -267,7 +252,7 @@ header section .cards .card p{
 header section .social {
     position: relative;
     width: 100%;
-    border: 1px solid #000;
+    /*border: 1px solid #000;*/
     top: 15%;
     display: flex;
     align-items: center;
@@ -275,5 +260,50 @@ header section .social {
     transition: 1s linear;
 }
 
+header section .social .btns {
+    margin-left: 30px;
+}
 
+header section .social .btns .bi{
+    font-size: 13px;
+    cursor: pointer;
+    transition: .3s linear;
+}
 
+header section .social .btns .bi:hover {
+    color: rgb(0, 0, 0, .5);
+}
+
+header section .social .btns .icons {
+    display: flex;
+    align-items: center;
+}
+
+header section .social .btns .icons a {
+    font-size: 12px;
+    margin-left: 10px;
+    color: #282828;
+    transition: .3s linear;
+}
+
+header section .social .btns .icons a:hover {
+    color: #000;
+}
+
+@media screen and (max-width: 1260px) {
+    header {
+        width: 83%;
+    }
+}
+
+@media screen and (max-width: 885px) {
+    header {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 775px ) {
+    header section .content{
+        left: 320px;
+    }
+}
