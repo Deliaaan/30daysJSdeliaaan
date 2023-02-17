@@ -184,7 +184,7 @@ header section.content .price_order .price a{
 header section .cards {
     width: 90%;
     height: 140px;
-    margin-top: 30px;
+    margin-top: 60px;
     position: relative;
     /*border: 1px solid #000;*/
     padding-left: 30px;
@@ -296,14 +296,42 @@ header section .social .btns .icons a:hover {
     }
 }
 
-@media screen and (max-width: 885px) {
+@media screen and (max-width: 930px) {
     header {
-        width: 95%;
+        width: 100%;
+        margin-right: 300px
     }
+    
 }
 
 @media screen and (max-width: 775px ) {
     header section .content{
-        left: 320px;
+        left: 300px;
+    }
+}
+
+@media screen and (max-width: 730px ) {
+    header {
+        width: 100%;
+        height: 100%;
+    }
+
+    header nav .right_menu ul li {
+        padding: 3px 6px;
+    }
+}
+
+@media screen and (max-width: 670px ) {
+    header section .content {
+        left: 24%;
+        top: 50%;
+    }
+
+    header .logo {
+        left: 29%;
+    }
+
+    header section .cards {
+        top: 43%;
     }
 }

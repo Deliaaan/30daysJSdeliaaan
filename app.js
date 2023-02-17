@@ -10,6 +10,7 @@ right.addEventListener('click', ()=> {
     cards.scrollLeft += 140;
 })
 
+
 let poster = document.getElementById('poster');
 let title = document.getElementById('title');
 let price = document.getElementById('price_cont');
