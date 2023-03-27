@@ -1,0 +1,29 @@
+El formato JSON (JavaScript Object Notation) es un formato abierto utilizado como 
+alternativa al XML para la transferencia de datos estructurados entre un servidor 
+de Web y una aplicación Web. Su lógica de organización tiene puntos de semejanza 
+con el XML, pero posee una notación diferente. El formato ganó popularidad en 
+servicios de la Web, como clientes de correo electrónico y páginas de compras, dado 
+que consigue transmitir una gran cantidad de información entre el cliente y el
+servidor utilizando una menor cantidad de caracteres. 
+
+Funciona asi:
+
+
+esto seria una constante en js con la información de un cliente por ejemplo
+const delian = {
+    name: "Diego", 
+    edad: 22,
+    social: {
+        twitter: 'di3goeli4n',
+        insta: 'delian.py'
+    }
+}
+
+esto seria convertido en JSON:
+
+"{\"name\":\"Diego\",\"edad\":22,\"social\":{\"twitter\":\"di3goeli4n\",\"insta\":\"delian.py\"}}" 
+
+
+En resumen podemos entender que es una version abstracta de los 
+datos que podemos importar o exportar en JS para trabajar
+con ellos mas facil. 
